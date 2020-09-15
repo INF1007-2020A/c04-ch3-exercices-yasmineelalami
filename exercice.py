@@ -5,24 +5,24 @@
 import math
 
 def square_root(a: float) -> float:
-    racine=sqrt(a)
-    carre=a*a
-    return racine,carre
+    return math.sqrt(a)
 
 
 def square(a: float) -> float:
-    return 0.0
+    return a**2
 
 
 def average(a: float, b: float, c: float) -> float:
-    return 0.0
+    return (a+b+c)/3
 
 
 def to_radians(angle_degs: float, angle_mins: float, angle_secs: float) -> float:
-    return 0.0
+    return math.radians(angle_degs + (angle_mins + (angle_secs / 60))
 
 
 def to_degrees(angle_rads: float) -> tuple:
+                        degrees = math.degrees(angle_rads)
+                        minutes = degrees%1
     return 0.0, 0.0, 0.0
 
 
